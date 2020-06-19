@@ -10,7 +10,7 @@ trait TempDirService extends BeforeAndAfterEach {
   var tempDir: File = _
 
   override def beforeEach(): Unit = {
-    tempDir = File.createTempFile("com-rakuten-ichiba-solutions-adroll-", "")
+    tempDir = File.createTempFile("com-venkata-mohan-", "")
     tempDir.delete()
     tempDir.mkdir()
     println(s"Created temp dir: ${tempDir.getAbsolutePath}")
